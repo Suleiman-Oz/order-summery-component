@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-very-blue: hsl(225, 100%, 98%);
+  --neutral-de-saturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  background-color: var(--primary-pale-blue);
+}
+.container {
+  background-color: white;
+  width: 400px;
+  margin: 80px auto;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px var(--neutral-de-saturated-blue);
+}
+.container img {
+  width: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+.container p {
+  padding: 0 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--neutral-de-saturated-blue);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--neutral-very-blue);
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.plan img {
+  width: 50px;
+}
+.ann-plan {
+  margin-right: 15px;
+}
+.ann-plan span:first-child {
+  font-weight: 700;
+}
+.ann-plan span:last-child {
+  font-weight: 700;
+  color: var(--neutral-de-saturated-blue);
+  letter-spacing: 0.6px;
+}
+.plan a {
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+.btn {
+  background-color: var(--primary-bright-blue);
+  border-radius: 10px;
+  border: none;
+  padding: 20px 100px;
+  color: var(--primary-pale-blue);
+  font-weight: 900;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 5px 20px var(--neutral-de-saturated-blue);
+}
+.btn:hover {
+    background-color: var(--neutral-dark-blue);
+}
+.cancel {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  color: var(--neutral-de-saturated-blue);
+  font-weight: 900;
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+    .container {
+        width: 450px;
+    }
+    .container img {
+        width: 450px;
+    }
+    .container p {
+        padding: 0 70px;
+    }
+    .container h2 {
+        margin-bottom: 15px;
+    }
+    .plan img {
+        width: 50px;
+    }
+    .btn {
+        margin: 20px 0;
+    }
+}
